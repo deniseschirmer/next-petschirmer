@@ -1,0 +1,19 @@
+/* EXAMPLE
+:root {
+  --main-font: 'Arial', sans-serif;
+}
+
+.text-center {
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+.text-bold {
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.text-muted {
+  font-family: var(--font-family);
+  color: var(--gray);
+} */

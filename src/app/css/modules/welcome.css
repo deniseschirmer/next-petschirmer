@@ -1,0 +1,21 @@
+@import "../globals/config.css";
+
+.custom-bg {
+  background-color: #c2b1a6;
+}
+
+.div-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.custom-icon {
+  width: 8em;
+}
+
+.atenciosamente {
+  display: flex;
+  justify-content: start;
+  margin-top: 1em;
+}

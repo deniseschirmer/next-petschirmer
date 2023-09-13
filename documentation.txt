@@ -1,0 +1,282 @@
+! Antes de prosseguirmos com os passos a seguir, peço gentilmente que aceite o convite no seu github para fazer parte do nosso repositório. !
+
+Configuração do Ambiente
+
+Certifique-se de ter o Node.js instalado. Caso ainda não o tenha, você pode baixá-lo em: https://nodejs.org/
+
+Clone o repositório do projeto a partir do GitHub:
+git clone 
+
+Entre na pasta do projeto.
+cd pet-schirmer
+
+Instale as dependências do projeto utilizando o npm:
+npm install
+
+Procedimento Crucial: Configuração do Servidor Local para Desenvolvimento
+
+Para garantir o início do desenvolvimento, é importante seguir os passos a seguir para iniciar adequadamente o servidor local:
+
+Início do Desenvolvimento:
+Para dar início ao desenvolvimento, execute o comando a seguir no terminal:
+npm run dev
+Após a conclusão das atividades de desenvolvimento do dia, encerre o servidor local com o seguinte comando no terminal:
+Ctrl + C
+Lembre-se de executar esses comandos cada vez que você iniciar ou finalizar uma sessão de desenvolvimento.
+
+Padronização de commits
+Faça commits respeitando a padronização abaixo e sempre explique no corpo do commit, o que o seu código está fazendo:
+
+Tipo de Commit	Descrição	Exemplo
+[feat]:	Adição de nova funcionalidade (feature)	feat: Adiciona autenticação de usuário
+[fix]:	Correção de um bug	fix: Corrige erro de validação no formulário
+[docs]:	Atualização ou criação de documentação	docs: Atualiza README com instruções de instalação
+[style]:Alterações de formatação de código ou estilo	style: Formata código com prettier
+[refactor]:	Refatoração de código	refactor: Reestrutura função de login
+[test]:	Adição ou modificação de testes	test: Adiciona testes de unidade para a função de carrinho
+chore	Tarefas de manutenção, atualização de dependências, etc.	chore: Atualiza dependências
+
+Gestão de Branches:
+
+No início deste projeto, a estratégia de gerenciamento de branches é fundamental para garantir uma colaboração organizada e a integridade do código. Para isso, estabelecemos duas branches principais: a branch "main" e a branch "develop".
+
+Branch "main": Esta é a branch principal do projeto, onde o código validado e testado é mantido. Apenas mudanças completamente revisadas e aprovadas serão incorporadas nesta branch. Ela reflete o estado estável e produção do projeto.
+
+Branch "develop": A branch "develop" é o ponto central para desenvolvimento contínuo e integração de novas funcionalidades. Antes que as mudanças sejam revisadas pela equipe, os desenvolvedores farão commits nesta branch. O primeiro commit de qualquer trabalho deve ser feito na "develop". Novas branches podem ser criadas por desenvolvedores para testes específicos, mas as alterações finais sempre serão unificadas na "develop".
+
+Procedimentos:
+Ao fazer seu primeiro commit, certifique-se de direcioná-lo para a branch "develop". Isso facilitará a revisão e o processo de integração. 
+Caso esteja na brach "main" use esse comando para mudar para a "develop": git checkout develop 
+
+Durante o desenvolvimento, mesmo que você esteja trabalhando continuamente em uma funcionalidade, os commits devem ser realizados na branch "develop". Isso permite um controle granular sobre as alterações feitas.
+Para testes pessoais e experimentações, os desenvolvedores podem criar branches individuais a partir da "develop". Uma vez que essas alterações sejam validadas, elas devem ser fundidas de volta para a "develop".
+
+Importante ressaltar: É imperativo evitar qualquer commit direto na branch "main". Todo o conteúdo validado deve ser movido para a branch "main" por meio de um procedimento cauteloso.
+
+Revisões e Integrações:
+O processo de revisão é crucial. Após a conclusão das mudanças em uma branch de teste individual ou na "develop", a equipe realizará uma revisão detalhada do código.
+Uma vez que a revisão seja concluída e as mudanças sejam aprovadas, um Pull Request (PR) será gerado para a mesclagem das alterações na branch "main".
+
+Este modelo de gestão de branches promove uma colaboração eficiente e mantém o código base protegido contra alterações não revisadas. Encorajamos todos os desenvolvedores a aderir rigorosamente a essas diretrizes, garantindo assim a qualidade, a estabilidade e a escalabilidade contínuas do projeto. Se surgirem dúvidas ou cenários específicos, não hesitem em comunicar-se. Juntos, garantiremos um ambiente de desenvolvimento produtivo e organizado.
+
+Estrutura do Projeto
+
+O projeto já possui uma estrutura básica que pode ser ampliada conforme necessário. Aqui estão os detalhes:
+
+Todo o conteúdo de estilização e criação de páginas está na pasta src -> app 
+
+Pasta Css src -> app -> css: 
+
+Terá toda estilização necessária para o projeto, está organizado da seguinte forma:
+
+Estilos Globais e Configuração
+
+Na pasta src -> app -> css -> globals, você encontrará os seguintes arquivos:
+
+colors.css: Definição das variáveis de cores utilizadas no projeto.
+
+reset.css: Limpeza de estilos pré-definidos pelo HTML.
+
+typography.css: Estilização da tipografia do projeto.
+
+Esses arquivos são importados no arquivo config.css. Certifique-se de importar novos estilos globais aqui.
+
+Estilos Modulares
+
+A pasta src -> app -> css -> modules. contém arquivos de estilos para elementos específicos.
+
+Importante!!!
+Todo arquivo da pasta "modules" e necessário importar primeiro a configuração global com a seguinte linha de código: [ @import '../globals/config.css'; ] Assim teremos toda a cofiguração padrão nos arquvivos como variaveis de cores e tipografia do projeto.
+
+Arquivo "main.css"
+O arquivo main.css é o principal arquivo de estilização e é o único a ser importado nas páginas. Para usar estilos modulares em suas páginas, basta importar o arquivo relevante da seguinte maneira: "@import './modules/NOME-DO-AQUIVO';"
+
+Como no exemplo inicial, temos a página de boas-vindas "@import './modules/boas-vindas.css';".
+
+Pasta de Imagens e Ícones
+
+A pasta src -> app -> img é usada para armazenar imagens e ícones necessários para o projeto.
+
+
+Arquivos de Páginas Principais
+
+Os arquivos de páginas principais estão localizados em src -> app -> ARQUIVO-PÁGINAS. Inicialmente, você encontrará as páginas pages.tsx e layout.tsx. Sinta-se à vontade para criar novas páginas e excluí-las conforme o desenvolvimento avança.
+
+
+Configuração do Tailwind CSS
+
+Tailwind.css: O Tailwind CSS já está configurado no projeto. Você pode começar a estilizar suas páginas e componentes utilizando as classes fornecidas pelo Tailwind. Consulte a documentação do Tailwind CSS para saber mais: https://tailwindcss.com/docs.
+
+
+Validação de Formulários com React Hook Forms e Yup
+
+Yup: o Yup também já está instalado no projeto e pré configurado na raiz do projeto, no arquivo "validationSchemas", as configurações estão abertas para serem ajustadas conforme necessário.
+
+React-hooks: O React Hooks também está instalado. Caso seja necessário, você pode configurá-lo para suas necessidades. Não se esqueça de importar o Yup no arquivo do React Hooks: ['import { loginSchema } from '../../validationSchemas'].
+
+
+Requisições Assíncronas com Axios
+
+O Axios já está instalado no projeto e configurado no arquivo api.tsx. As configurações podem ser ajustadas conforme necessário.
+
+Font Awesome
+
+O Font Awesome também está instalado no projeto. Para usar ícones, siga os passos abaixo:
+
+Importe a requisição para o Font Awesome no arquivo desejado:import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+Em seguida, importe o ícone desejado: import { nomeDoIcone } from '@fortawesome/free-solid-svg-icons';
+
+Insira o ícone onde necessário: <FontAwesomeIcon icon={nomeDoIcone} className="custom-icon" />
+
+Para achar o código do ícone necessário siga esse passos no site https://fontawesome.com/
+
+Passo 1: Procure o ícone de que deseja (Lembre-se de que apenas ícones gratuitos estão disponíveis atualmente no projeto).
+
+Passo 2: Clique no ícone, configure sua estilização diante da necessidade do projeto e mude, abaixo o "HTML" para "React".
+
+Passo 3: em "React", mude de "Global Import" para "Individual Import", copie o código "<FontAwesomeIcon icon={NomeDoIcone} />" e adicione no projeto.
+
+AVISO: O Font Awesome está instalado apenas diante da necessidade para uso, caso não encontre o ícone abordado no design do projeto, importe ele via svg manualmente, na pasta "icons", ela se encontra dentro da pasta "img".
+
+//ENGLISH
+
+! Before we proceed with the following steps, I kindly ask you to accept the invitation on your github to join our repository. !
+
+Setting up the environment
+
+Make sure you have Node.js installed. If you don't already have it, you can download it from: https://nodejs.org/
+
+Clone the project repository from GitHub:
+git clone 
+
+Enter the project folder.
+cd pet-schirmer
+
+Install the project's dependencies using npm:
+npm install
+
+Crucial Procedure: Setting up the Local Server for Development
+
+To ensure the start of development, it is important to follow the steps below to properly start the local server:
+
+Starting Development:
+To start development, run the following command in the terminal:
+npm run dev
+Once the day's development activities are complete, shut down the local server with the following command in the terminal:
+Ctrl + C
+Remember to run these commands each time you start or end a development session.
+
+Make commits following the standardization below and always explain in the commit body what your code is doing:
+
+Commit Type Description Example:
+[feat]: Addition of a new feature feat: Add user authentication
+[fix]: Fixing a bug fix: Fix validation error in the form
+[docs]: Documentation update or creation docs: Update README with installation instructions
+[style]: Code formatting or style changes style: Format code with prettier
+[refactor]: Code refactoring refactor: Refactor login function
+[test]: Addition or modification of tests test: Add unit tests for the cart function
+[chore]: Maintenance tasks, dependency updates, etc. chore: Update dependencies
+
+Branches management:
+
+At the start of this project, the branch management strategy is key to ensuring organized collaboration and code integrity. To this end, we established two main branches: the "main" branch and the "develop" branch.
+
+Main" branch: This is the main branch of the project, where validated and tested code is kept. Only fully reviewed and approved changes will be incorporated into this branch. It reflects the stable and production state of the project.
+
+Develop" branch: The "develop" branch is the central point for continuous development and integration of new features. Before changes are reviewed by the team, developers will make commits in this branch. The first commit of any work should be done in "develop". New branches can be created by developers for specific tests, but the final changes will always be unified in "develop".
+
+Procedures:
+When making your first commit, make sure you direct it to the "develop" branch. This will facilitate the review and integration process. 
+If you are on the "main" branch, use this command to switch to "develop": git checkout develop 
+
+During development, even if you are working continuously on a feature, commits should be made on the "develop" branch. This allows granular control over the changes made.
+For personal testing and experimentation, developers can create individual branches from "develop". Once these changes have been validated, they should be merged back into develop.
+
+Important to note: It is imperative to avoid any direct commits to the "main" branch. All validated content must be moved to the "main" branch using a cautious procedure.
+
+Revisions and integrations:
+The review process is crucial. Once the changes have been completed in an individual test branch or in "develop", the team will carry out a detailed review of the code.
+Once the review is complete and the changes are approved, a Pull Request (PR) will be generated to merge the changes into the "main" branch.
+
+This branch management model promotes efficient collaboration and keeps the code base safe from unreviewed changes. We encourage all developers to strictly adhere to these guidelines, thus ensuring the ongoing quality, stability and scalability of the project. If you have any questions or specific scenarios, don't hesitate to get in touch. Together, we will ensure a productive and organized development environment.
+
+Project structure
+
+The project already has a basic structure that can be expanded as needed. Here are the details:
+
+All styling and page creation content is in the src -> app folder 
+
+Css folder src -> app -> css: 
+
+It will have all the styling needed for the project, it is organized as follows:
+
+Global Styles and Configuration
+
+In the src -> app -> css -> globals folder, you will find the following files:
+
+colors.css: Definition of the color variables used in the project.
+
+reset.css: Cleaning up styles predefined by HTML.
+
+typography.css: Styling of the project's typography.
+
+These files are imported into the config.css file. Make sure you import new global styles here.
+
+Modular Styles
+
+The src -> app -> css -> modules. folder contains style files for specific elements.
+
+Important!!!
+Every file in the "modules" folder must first import the global configuration with the following line of code: [ @import '../globals/config.css'; ] This way we'll have all the default configuration in the files, such as the project's color and typography variables.
+
+Main.css" file
+The main.css file is the main styling file and is the only one to be imported into the pages. To use modular styles on your pages, simply import the relevant file as follows: "@import './modules/FILE-NAME';"
+
+As in the initial example, we have the welcome page "@import './modules/welcome.css';".
+
+Images and icons folder
+
+The src -> app -> img folder is used to store images and icons needed for the project.
+
+
+Main Page Files
+
+The main page files are located in src -> app -> FILE-PAGES. Initially, you'll find pages.tsx and layout.tsx. Feel free to create new pages and delete them as development progresses.
+
+
+Tailwind CSS configuration
+
+Tailwind.css: Tailwind CSS is already configured in the project. You can start styling your pages and components using the classes provided by Tailwind. Check out the Tailwind CSS documentation to find out more: https://tailwindcss.com/docs.
+
+
+Validating Forms with React Hook Forms and Yup
+
+Yup: Yup is also already installed in the project and pre-configured in the project root, in the "validationSchemas" file, the settings are open to be adjusted as necessary.
+
+React Hooks: React Hooks is also installed. If necessary, you can configure it for your needs. Don't forget to import the Yup into the React Hooks file: ['import { loginSchema } from '../../validationSchemas'].
+
+
+Asynchronous requests with Axios
+
+Axios is already installed in the project and configured in the api.tsx file. The settings can be adjusted as required.
+
+Font Awesome
+
+Font Awesome is also installed in the project. To use icons, follow the steps below:
+
+Import the request for Font Awesome in the desired file:import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+Next, import the desired icon: import { nameIcon } from '@fortawesome/free-solid-svg-icons';
+
+Insert the icon where necessary: <FontAwesomeIcon icon={nameDoIcon} className="custom-icon" />
+
+To find the icon code you need, follow these steps on https://fontawesome.com/
+
+Step 1: Search for the icon you want (remember that only free icons are currently available in the project).
+
+Step 2: Click on the icon, configure its styling according to the needs of the project and change the "HTML" below to "React".
+
+Step 3: In "React", change "Global Import" to "Individual Import", copy the code "<FontAwesomeIcon icon={IconName} />" and add it to the project.
+
+WARNING: Font Awesome is only installed if you need it. If you can't find the icon in the project design, import it via svg manually, in the "icons" folder, which is inside the "img" folder.

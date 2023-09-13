@@ -1,0 +1,2 @@
+/* Sempre importar o arquivo de configuração antes de qualquer outro arquivo de estilo. */
+@import "../globals/config.css";
