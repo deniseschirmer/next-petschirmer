@@ -5,7 +5,7 @@ Configuração do Ambiente
 Certifique-se de ter o Node.js instalado. Caso ainda não o tenha, você pode baixá-lo em: https://nodejs.org/
 
 Clone o repositório do projeto a partir do GitHub:
-git clone 
+git clone https://github.com/deniseschirmer/next-petschirmer
 
 Entre na pasta do projeto.
 cd pet-schirmer
@@ -148,7 +148,7 @@ Setting up the environment
 Make sure you have Node.js installed. If you don't already have it, you can download it from: https://nodejs.org/
 
 Clone the project repository from GitHub:
-git clone 
+git clone https://github.com/deniseschirmer/next-petschirmer
 
 Enter the project folder.
 cd pet-schirmer
