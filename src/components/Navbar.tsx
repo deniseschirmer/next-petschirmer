@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+import { TbBrandFacebook } from "react-icons/tb";
+import { BsInstagram } from "react-icons/bs";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -37,7 +39,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link href="https://www.facebook.com/petschiirmer/" passHref>
-                  Link para Facebook
+                  <TbBrandFacebook width={"30px"} />
                 </Link>
               </li>
               <li>
@@ -47,7 +49,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {/* Adicione o ícone do Instagram aqui, se necessário */}
+                  <BsInstagram width={"25px"} />
                 </Link>
               </li>
             </ul>
@@ -62,7 +64,7 @@ const Navbar = () => {
               </div>
             ) : (
               <div
-                className="text-green-600 cursor-pointer"
+                className="text-green-800 cursor-pointer"
                 onClick={() => setToggleMenu(true)}
               >
                 <RiMenu3Line size={27} />
