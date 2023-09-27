@@ -1,22 +1,25 @@
-import './css/main.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import "@/globals.css";
+import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
+import { Nunito } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ["latin"], weight: ["300"] });
 
 export const metadata: Metadata = {
-  title: 'Pet Schirmer',
-  description: 'Pet Schirmer Project',
-}
+  title: "Pet Schirmer",
+  description: "Pet Schirmer Project",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={nunito.className}>
+        <Navbar /> {children}
+      </body>
     </html>
-  )
+  );
 }
