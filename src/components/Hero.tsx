@@ -12,7 +12,7 @@ const Hero = () => {
         <img
           src="/foto-principal.png"
           alt="Imagem de fundo"
-          className="w-full h-auto mx-auto object-cover object-top"
+          className="w-full mx-auto object-cover object-top"
         />
         <div className="absolute  left--12 top-1/3 ml-5">
           <h1 className="text-dark-green text-4xl lg:text-5xl font-extrabold leading-10 lg:leading-14 text-left">
