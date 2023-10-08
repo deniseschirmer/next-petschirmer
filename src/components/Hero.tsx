@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 const Hero = () => {
   const numeroWhatsApp = "41988832614";
@@ -9,11 +10,20 @@ const Hero = () => {
   return (
     <section>
       <div className="relative w-full">
-        <img
+
+        <Image src="/foto-principal.png"
+          alt="Imagem de fundo"
+          className="w-full mx-auto object-cover object-top" width={500} height={500}/>
+
+
+        {/* <img
           src="/foto-principal.png"
           alt="Imagem de fundo"
           className="w-full mx-auto object-cover object-top"
-        />
+        /> */}
+
+
+
         <div className="absolute  left--12 top-1/3 ml-5">
           <h1 className="text-dark-green text-4xl lg:text-5xl font-extrabold leading-10 lg:leading-14 text-left">
             Quer ficar <br />
@@ -27,7 +37,15 @@ const Hero = () => {
         </div>
       </div>
       <div className="bg-light-brown p-4 pl-10 pr-10  flex items-center justify-around">
-        <img src="/foto.png" alt="" className="w-16 h-19 rounded-full mr-8" />
+
+      <Image src="/foto.png"
+          alt="Imagem de fundo"
+          className=" mx-auto object-cover object-top" width={100} height={100}/>
+
+
+        {/* <img src="/foto.png" alt="" className="w-16 h-19 rounded-full mr-8" /> */}
+
+
         <h2 className="text-black font-extrabold text-2xl md:text-3xl lg:text-4xl font-nunito">
           Cuidamos do seu amiguinho com muito carinho!
         </h2>
@@ -40,6 +58,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
+
     </section>
   );
 };
