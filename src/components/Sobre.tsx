@@ -3,7 +3,7 @@ const Sobre = () => {
     <>
       <div>
         <div>
-          <h1>Somos o Pet Schirmer</h1>
+          <h1 className="text-green font-extrabold text-xl md:text-2xl lg:text-3xl font-nunito">Somos o Pet Schirmer</h1>
 
           <p>
             Com mais de 12 anos de experiência, cuidamos do seu pet com carinho
