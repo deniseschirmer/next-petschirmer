@@ -17,14 +17,18 @@ const Navbar = () => {
             href="/"
           >
             {/* Adicione a classe 'logo' para controlar o tamanho da logo */}
-            <img className="logo h-12 md:h-16" src="/logo.png" alt="Logo" />
+            <img
+              className="logo h-12 md:h-16 xl:h-20"
+              src="/logo.png"
+              alt="Logo"
+            />
           </Link>
           <nav
             className={`hidden md:block space-x-4 ${
               toggleMenu ? "" : "hidden"
             }`}
           >
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-4 font-extrabold ">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -75,8 +79,8 @@ const Navbar = () => {
 
         {toggleMenu && (
           <div className="bg-white md:hidden">
-            <div className="container mx-auto py-2">
-              <ul className="flex flex-col space-y-2">
+            <div className="font-extrabold mx-auto py-2">
+              <ul className="flex flex-col font-extrabold">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
