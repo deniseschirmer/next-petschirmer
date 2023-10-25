@@ -19,18 +19,18 @@ const Hero = () => {
         />
 
         <div className="absolute  left--12 top-1/3 ml-5">
-          <h1 className="text-dark-green text-4xl lg:text-5xl font-extrabold leading-10 lg:leading-14 text-left">
+          <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-10 lg:leading-14 text-left">
             Quer ficar <br />
             Lindão?
           </h1>
           <a href={urlWhatsApp} target="_blank" rel="noopener noreferrer">
-            <button className="bg-dark-green rounded-lg text-white w-48 h-12 inline-flex items-center">
-              Agende agora! <FaWhatsapp size={32} className="ml-2" />
+            <button className="flex bg-dark-green rounded-lg text-white w-40 h-12 items-center justify-center">
+              Agende agora! <FaWhatsapp size={30} className="ml-2" />
             </button>
           </a>
         </div>
       </div>
-      <div className="bg-light-brown p-4 pl-10 pr-10  flex items-center justify-around">
+      <div className="flex bg-light-brown p-4 pl-10 pr-10 items-center justify-between">
         <Image
           src="/foto.png"
           alt="Imagem de fundo"
@@ -39,7 +39,7 @@ const Hero = () => {
           height={100}
         />
 
-        <h2 className="text-black font-extrabold text-2xl md:text-3xl lg:text-4xl font-nunito">
+        <h2 className="text-black font-extrabold text-2xl md:text-3xl lg:text-4xl font-nunito ml-2">
           Cuidamos do seu amiguinho com muito carinho!
         </h2>
         <div className="flex items-center p-2">
