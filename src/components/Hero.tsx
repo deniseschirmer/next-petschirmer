@@ -30,7 +30,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex bg-light-brown p-4 pl-10 pr-10 items-center justify-between">
+      <div className="flex flex-wrap md:flex-nowrap bg-light-brown p-4 pl-10 pr-10 items-center justify-between">
         <Image
           src="/foto.png"
           alt="Imagem de fundo"
