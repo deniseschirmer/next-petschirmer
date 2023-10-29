@@ -30,8 +30,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-wrap sm:flex-nowrap bg-light-brown items-center justify-between px-4 pt-7 pb-12">
-        <div className="flex ">
+      <div className="flex flex-wrap sm:flex-nowrap bg-light-brown items-center justify-between px-4 md:px-4 lg:px-6 xl:px-32 pt-7 pb-12">
+        <div className="flex justify-between ">
           <Image
             src="/foto.png"
             alt="Imagem de fundo"
@@ -40,7 +40,7 @@ const Hero = () => {
             height={100}
           />
 
-          <h2 className="text-black font-extrabold text-1xl md:text-2xl lg:text-4xl font-nunito ml-4 p-1 ">
+          <h2 className="text-black font-extrabold text-1xl md:text-2xl md:leading-7 lg:text-4xl font-nunito ml-4 p-2 ">
             Cuidamos do seu amiguinho com muito carinho!
           </h2>
         </div>
@@ -49,7 +49,7 @@ const Hero = () => {
             <span className="font-extrabold "> +12</span> <br /> anos de
             experiência{" "}
           </p>
-          <p className="pl-5 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito">
+          <p className="pl-5 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito lg:ml-3">
             <span className="font-extrabold"> +300</span> <br /> atendimentos
             por mês
           </p>
