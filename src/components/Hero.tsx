@@ -18,36 +18,40 @@ const Hero = () => {
           height={500}
         />
 
-        <div className="absolute  left--12 top-1/3 ml-5">
-          <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-10 lg:leading-14 text-left">
+        <div className="absolute left--12 top-1/3 ml-5">
+          <h1 className="text-black text-2xl md:text-4xl lg:text-6xl font-extrabold leading-7 lg:leading-14 text-left mb-2">
             Quer ficar <br />
             Lindão?
           </h1>
           <a href={urlWhatsApp} target="_blank" rel="noopener noreferrer">
-            <button className="flex bg-dark-green rounded-lg text-white w-40 h-12 items-center justify-center">
-              Agende agora! <FaWhatsapp size={30} className="ml-2" />
+            <button className="flex bg-dark-green rounded-lg text-white w-32 h-9 md:w-40 md:h-11 lg:w-44 lg:h-14 text-sm md:text-base items-center justify-center p-1">
+              Agende agora! <FaWhatsapp size={20} className="ml-2" />
             </button>
           </a>
         </div>
       </div>
-      <div className="flex flex-wrap md:flex-nowrap bg-light-brown p-4 pl-10 pr-10 items-center justify-between">
-        <Image
-          src="/foto.png"
-          alt="Imagem de fundo"
-          className=" mx-auto object-cover object-top"
-          width={100}
-          height={100}
-        />
+      <div className="flex flex-wrap sm:flex-nowrap bg-light-brown items-center justify-between px-4 pt-7 pb-12">
+        <div className="flex ">
+          <Image
+            src="/foto.png"
+            alt="Imagem de fundo"
+            className=" object-top"
+            width={100}
+            height={100}
+          />
 
-        <h2 className="text-black font-extrabold text-2xl md:text-3xl lg:text-4xl font-nunito ml-2">
-          Cuidamos do seu amiguinho com muito carinho!
-        </h2>
-        <div className="flex items-center p-2">
-          <p className=" border-r border-gray-600 text-black font-extrabold text-1xl md:text-2xl lg:text-2xl font-nunito">
-            +12 anos de experiência{" "}
+          <h2 className="text-black font-extrabold text-1xl md:text-2xl lg:text-4xl font-nunito ml-4 p-1 ">
+            Cuidamos do seu amiguinho com muito carinho!
+          </h2>
+        </div>
+        <div className="flex items-center p-2 ml-24">
+          <p className="pr-5 border-r border-gray-600 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito p-2">
+            <span className="font-extrabold "> +12</span> <br /> anos de
+            experiência{" "}
           </p>
-          <p className="pl-10 text-black font-extrabold text-1xl md:text-2xl lg:text-2xl font-nunito">
-            +300 atendimentos por mês
+          <p className="pl-5 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito">
+            <span className="font-extrabold"> +300</span> <br /> atendimentos
+            por mês
           </p>
         </div>
       </div>
