@@ -3,7 +3,10 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 
-const nunito = Nunito({ subsets: ["latin"], weight: ["300"] });
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Pet Schirmer",
