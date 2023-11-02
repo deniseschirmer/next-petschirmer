@@ -19,7 +19,7 @@ const Hero = () => {
         />
 
         <div className="absolute left--12 top-1/3 ml-5">
-          <h1 className="text-black text-2xl md:text-4xl lg:text-6xl font-extrabold leading-7 lg:leading-14 text-left mb-2">
+          <h1 className="text-black text-2xl md:text-4xl xl:text-6xl font-extrabold leading-7 lg:leading-14 text-left mb-2">
             Quer ficar <br />
             Lindão?
           </h1>
