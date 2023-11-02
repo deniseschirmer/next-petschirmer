@@ -4,11 +4,11 @@ const Sobre = () => {
     <>
       <section className="flex flex-wrap md:flex-wrap lg:flex-nowrap font-nunito md:py-10 md:px-36 lg:px-36 lg:mt-5 gap-11 xl:gap-24">
         <div className=" p-4 xl:p-10">
-          <h1 className="text-green font-bold text-sm md:text-base lg:text-3xl mb-6">
+          <h1 className="text-green font-extrabold text-2x1 md:text-3xl mb-6">
             Somos o Pet Schirmer
           </h1>
 
-          <p className="mb-4 text-sm md:text-base lg:text-lg font-normal leading-7">
+          <p className="mb-4 text-sm md:text-base lg:text-lg font-normal leading-5">
             Com mais de 12 anos de experiência, cuidamos do seu pet com carinho
             e dedicação, oferecendo uma variedade de produtos e serviços de
             qualidade.
