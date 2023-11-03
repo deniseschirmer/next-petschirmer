@@ -19,7 +19,7 @@ const Hero = () => {
         />
 
         <div className="absolute left--12 top-1/3 ml-5">
-          <h1 className="text-black text-2xl md:text-4xl lg:text-6xl font-extrabold leading-7 lg:leading-14 text-left mb-2">
+          <h1 className="text-black text-2xl md:text-4xl xl:text-6xl font-extrabold leading-7 lg:leading-14 text-left mb-2">
             Quer ficar <br />
             Lindão?
           </h1>
@@ -36,20 +36,20 @@ const Hero = () => {
             src="/foto.png"
             alt="Imagem de fundo"
             className=" object-top"
-            width={100}
-            height={100}
+            width={95}
+            height={5}
           />
 
-          <h2 className="text-black font-extrabold text-1xl md:text-2xl md:leading-7 lg:text-4xl font-nunito ml-4 p-2 ">
+          <h2 className="text-black font-extrabold text-1xl md:text-2xl leading-5 md:leading-7 lg:text-4xl font-nunito ml-4 p-2 ">
             Cuidamos do seu amiguinho com muito carinho!
           </h2>
         </div>
-        <div className="flex items-center p-2 ml-24">
-          <p className="pr-5 border-r border-gray-600 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito p-2">
+        <div className="flex items-center p-2 ml-16 md:ml-1">
+          <p className="pr-9 border-r border-gray-600 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito p-2">
             <span className="font-extrabold "> +12</span> <br /> anos de
             experiência{" "}
           </p>
-          <p className="pl-5 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito lg:ml-3">
+          <p className="pl-9 text-black font-normal text-1xl md:text-2xl lg:text-2xl font-nunito lg:ml- p-2">
             <span className="font-extrabold"> +300</span> <br /> atendimentos
             por mês
           </p>
