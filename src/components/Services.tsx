@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import { BiSolidRightArrow } from "react-icons/bi";
 
 const Services = () => {
   return (
     <section className="relative w-full">
-      <h1 className=" bg-light-brown text-center md:text-left text-3xl md:text-4xl font-extrabold p-16 ">
+      <h1 className=" bg-light-brown text-left  md:text-center text-2xl md:text-3xl font-extrabold  pt-6 px-4 md:p-16 ">
         Serviços
       </h1>
-      <div className="flex flex-wrap md:flex-nowrap  w-full h-full  bg-light-brown px-12 md:px-4 lg:px-6 xl:px-12 pt-2 pb-40 gap-4 justify-center ">
+      <div className="flex flex-wrap md:flex-wrap  w-full h-full  bg-light-brown px-4 md:px-4 lg:px-6 xl:px-12 pt-2 pb-6 md:pb-14 lg:pb-16 gap-4 justify-center ">
         <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[385px]  rounded-2xl p-4">
           <div className="flex items-center">
             <Image
@@ -17,16 +18,16 @@ const Services = () => {
               width={75}
               height={75}
             />
-            <span className="font-nunito text-2xl font-bold text-black">
+            <span className="font-nunito text-xl md:text-2xl font-bold text-black">
               Banho e tosa
             </span>
           </div>
 
-          <p>
+          <p className="text-sm md:text-base lg:text-lg">
             Mantenha seu pet saudável com nossos serviços de higiene e cuidados
             especiais.
           </p>
-          <p className="flex">
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -41,7 +42,7 @@ const Services = () => {
             </svg>
             O banho para a prevenção de problemas de pele, como alergias.
           </p>
-          <p className="flex">
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -57,7 +58,7 @@ const Services = () => {
             A hidratação estimula o crescimento de uma pelagem saudável e
             brilhante.
           </p>
-          <p className="flex ">
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -82,12 +83,14 @@ const Services = () => {
               width={75}
               height={75}
             />
-            <span className="font-nunito text-2xl font-bold text-black">
+            <span className="font-nunito text-xl md:text-2xl font-bold text-black">
               Leva e trás
             </span>
           </div>
-          <p>Buscamos e levamos o seu pet, em um raio de até 5km.</p>
-          <p className="flex">
+          <p className="text-sm md:text-base lg:text-lg">
+            Buscamos e levamos o seu pet, em um raio de até 5km.
+          </p>
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -102,7 +105,7 @@ const Services = () => {
             </svg>
             Poupe seu tempo e esforço.
           </p>
-          <p className="flex">
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -117,7 +120,7 @@ const Services = () => {
             </svg>
             Flexibilidade de horários para se adequar à sua agenda.
           </p>
-          <p className="flex ">
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -133,7 +136,7 @@ const Services = () => {
             Ambiente tranquilo e seguro durante o transporte.
           </p>
         </div>
-        <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[385px]  rounded-2xl p-4">
+        <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[385px]  rounded-2xl p-4 ml-3">
           <div className="flex items-center">
             <Image
               src="/hospedagem-icon.png"
@@ -142,12 +145,14 @@ const Services = () => {
               width={75}
               height={75}
             />
-            <span className="font-nunito text-2xl font-bold text-black">
+            <span className="font-nunito text-xl md:text-2xl font-bold text-black">
               Hospedagem
             </span>
           </div>
-          <p>Proporcionamos uma estadia confortável e segura para o seu pet.</p>
-          <p className="flex">
+          <p className="text-sm md:text-base lg:text-lg">
+            Proporcionamos uma estadia confortável e segura para o seu pet.
+          </p>
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -162,7 +167,7 @@ const Services = () => {
             </svg>
             Ambiente acolhedor e seguro.
           </p>
-          <p className="flex">
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -177,7 +182,7 @@ const Services = () => {
             </svg>
             Socialização e diversão..
           </p>
-          <p className="flex ">
+          <p className="flex text-sm md:text-base lg:text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -194,6 +199,16 @@ const Services = () => {
           </p>
         </div>
         <div />
+        <div className="flex text-sm md:text-base lg:text-lg py-3 px-4 md:px-18 flex-wrap md:flex-nowrap items-center justify-center gap-2">
+          <p className="flex font-nunito text-sm items-center justify-center">
+            Segurança e o bem-estar do seu pet é a nossa prioridade. Garantindo
+            que ele receba o melhor atendimento.
+          </p>
+          <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-55 lg:w-56  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2">
+            Veja todos os detalhes
+            <BiSolidRightArrow />
+          </button>
+        </div>
       </div>
     </section>
   );
