@@ -4,6 +4,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import Hero from "@/components/Hero";
 import Sobre from "@/components/Sobre";
 import Services from "@/components/Services";
+import Consultorio from "@/components/Consultorio";
 
 const Page: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Page: React.FC = () => {
       <Hero />
       <Sobre />
       <Services />
+      <Consultorio />
     </>
   );
 };
