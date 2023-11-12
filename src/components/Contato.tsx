@@ -4,13 +4,13 @@ import Iframe from "react-iframe";
 
 const Contato = () => {
   return (
-    <section className=" bg-light-brown relative w-full px-36 py-24">
-      <div className="flex gap-12 ">
-        <div className="w-full flex flex-col p-2 ">
-          <h1 className="text-left text-2xl md:text-3xl font-extrabold  mb-8 ">
+    <section className=" bg-light-brown relative flex flex-wrap md:flex-wrap lg:flex-nowrap font-nunito md:py-14 md:px-6 lg:px-36 lg:mt-5 gap-6 sm:gap-20 xl:gap-24 items-center justify-center xl:justify-evenly h-full">
+      <div className="flex gap-12 md:gap-24 xl:gap-40 flex-wrap h-full md:flex-nowrap p-4 pt-6 sm:p-14 md:p-4 items-center justify-center">
+        <div className=" flex h-full sm:w-1/2  flex-col sm:items-center ">
+          <h1 className="text-left text-black text-2xl xl:text-xxl font-extrabold mb-8 ">
             Esperamos por você.
           </h1>
-          <div className="flex flex-col gap-3 mb-6">
+          <div className="flex flex-col gap-3 mb-6 ">
             <h3 className="flex text-sm md:text-lg font-nunito gap-3 font-bold">
               <AiOutlineClockCircle
                 size={20}
@@ -33,11 +33,13 @@ const Contato = () => {
             <p className="pl-8 font-medium">Cep: 810.200-40</p>
             <p className="pl-8 font-medium">Curitiba/PR</p>
           </div>
-          <button className="flex bg-transparent border-2 border-solid border-black rounded-md text-black w-32 h-11    lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 ml-2">
-            Google Maps
-          </button>
+          <div className="flex flex-col gap-3 items-start">
+            <button className="flex bg-transparent border-2 border-solid border-black rounded-md text-black w-80 md:w-32 h-11  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 md:mr-[90px]">
+              Google Maps
+            </button>
+          </div>
         </div>
-        <div className="flex w-full items-center justify-center object-fill">
+        <div className="flex w-[320px] md:w-[369px] xl:w-full items-center justify-center object-fill ">
           <iframe
             title="Google Maps"
             width="544"
