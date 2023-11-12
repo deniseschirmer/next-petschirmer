@@ -5,7 +5,7 @@ import { BiSolidRightArrow } from "react-icons/bi";
 const Services = () => {
   return (
     <section className="relative w-full">
-      <h1 className=" bg-light-brown text-left  md:text-center text-2xl md:text-3xl font-extrabold  pt-6 px-4 md:p-16 ">
+      <h1 className=" bg-light-brown text-left text-2xl md:text-3xl font-extrabold  pt-6 px-4 md:p-16 ">
         Serviços
       </h1>
       <div className="flex flex-wrap md:flex-wrap  w-full h-full  bg-light-brown px-4 md:px-4 lg:px-6 xl:px-12 pt-2 pb-6 md:pb-14 lg:pb-16 gap-4 justify-center ">

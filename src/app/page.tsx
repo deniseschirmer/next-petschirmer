@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Sobre from "@/components/Sobre";
 import Services from "@/components/Services";
 import Consultorio from "@/components/Consultorio";
+import Contato from "@/components/Contato";
 
 const Page: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Page: React.FC = () => {
       <Sobre />
       <Services />
       <Consultorio />
+      <Contato />
     </>
   );
 };
