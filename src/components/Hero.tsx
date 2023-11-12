@@ -8,7 +8,7 @@ const Hero = () => {
   const urlWhatsApp = `https://wa.me/${numeroWhatsApp}`;
 
   return (
-    <section className="mt-[72px] md:mt-[104px]">
+    <section className="">
       <div className="relative w-full">
         <Image
           src="/foto-principal.png"
