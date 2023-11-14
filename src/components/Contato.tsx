@@ -7,7 +7,10 @@ const Contato = () => {
     <section className=" bg-light-brown relative flex flex-wrap md:flex-wrap lg:flex-nowrap font-nunito md:py-14 md:px-6 lg:px-36 lg:mt-5 gap-6 sm:gap-20 xl:gap-24 items-center justify-center xl:justify-evenly h-full">
       <div className="flex gap-12 md:gap-24 xl:gap-40 flex-wrap h-full md:flex-nowrap p-4 pt-6 sm:p-14 md:p-4 items-center justify-center">
         <div className=" flex h-full sm:w-1/2  flex-col sm:items-center ">
-          <h1 className="text-left text-black text-2xl xl:text-xxl font-extrabold mb-8 ">
+          <h1
+            className="text-left text-black text-2xl xl:text-xx
+          l font-extrabold mb-8 "
+          >
             Esperamos por você.
           </h1>
           <div className="flex flex-col gap-3 mb-6 ">
