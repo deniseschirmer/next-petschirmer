@@ -6,6 +6,7 @@ import Sobre from "@/components/Sobre";
 import Services from "@/components/Services";
 import Consultorio from "@/components/Consultorio";
 import Contato from "@/components/Contato";
+import Carrossel from "@/components/Carrossel";
 
 const Page: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Page: React.FC = () => {
       <Services />
       <Consultorio />
       <Contato />
+      <Carrossel />
     </>
   );
 };
