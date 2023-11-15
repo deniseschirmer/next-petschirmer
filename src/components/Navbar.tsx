@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="w-full bg-white fixed top-0 left-0 right-0 z-10">
+    <nav className="w-full bg-white sticky top-0 left-0 right-0 z-10">
       <div className="px-4 mx-auto lg:max-w-8xl lg:px-12 ">
         <div className="flex items-center justify-between">
           <Link
