@@ -7,12 +7,15 @@ import { LuPhone } from "react-icons/lu";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="flex bg-xlight-brown font-nunito py-5 md:py-6 lg:py-7 px-4 md:px-6 lg:px-12 gap-6 items-center justify-center">
+    <footer
+      className="flex bg-xlight-brown font-nunito py-5 md:py-6 lg:py-7 px-4 md:px-6 lg:px-12 gap-3
+     md:gap-10 md:justify-start lg:justify-center flex-col sm:flex-row"
+    >
       <div className="flex flex-col gap-3 mb-6 ">
         <h3 className="flex text-sm md:text-lg font-nunito gap-3 font-bold">
           Pet Schirmer
         </h3>
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-3">
           <li className="flex items-center">
             <Link
               href="https://www.instagram.com/petschirmer/"
@@ -35,27 +38,36 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col gap-3 mb-6 ">
-        <h3 className="flex text-sm md:text-lg font-nunito gap-3 font-bold items-center">
-          <AiOutlineClockCircle size={20} style={{ verticalAlign: "middle" }} />
-          Horário de funcionamento
-        </h3>
-        <p className="pl-8 font-medium">Segunda a Sexta: 09h30 às 17h30</p>
-        <p className="pl-8 font-medium">Sábado: 09h00 às 14h00</p>
-      </div>
-      <div className="flex flex-col mb-6">
-        <p className="flex text-sm md:text-lg font-nunito gap-3 items-center">
-          <LuPhone />
-          (41) 3042-4820
-        </p>
-        <p className="flex text-sm md:text-lg font-nunito gap-3 items-center">
-          <BiEnvelope size={20} />
-          pet_schirmer@hotmail.com
-        </p>
-        <p className="flex text-sm md:text-lg font-nunito gap-3 items-center">
-          <TiLocationOutline size={20} />
-          Rua Ildefonso Stockler de França, 48 - Loja 04. Curitiba/PR
-        </p>
+      <div className="flex flex-col lg:flex-row gap-3">
+        <div className="flex flex-col gap-3 mb-6 ">
+          <h3 className="flex text-sm md:text-lg font-nunito gap-3 items-center">
+            <AiOutlineClockCircle
+              size={20}
+              style={{ verticalAlign: "middle" }}
+            />
+            Horário de funcionamento
+          </h3>
+          <p className="flex pl-8 text-sm md:text-base lg:text-lg font-medium">
+            Segunda a Sexta: 09h30 às 17h30
+          </p>
+          <p className="flex pl-8 text-sm md:text-base lg:text-lg font-medium">
+            Sábado: 09h00 às 14h00
+          </p>
+        </div>
+        <div className="flex flex-col gap-3 mb-6">
+          <p className="flex text-sm  md:text-base lg:text-lg font-nunito gap-3 items-center">
+            <LuPhone />
+            (41) 3042-4820
+          </p>
+          <p className="flex text-sm md:text-base lg:text-lg font-nunito gap-3 items-center">
+            <BiEnvelope size={20} />
+            pet_schirmer@hotmail.com
+          </p>
+          <p className="flex text-sm md:text-base lg:text-lg font-nunito gap-3 items-center">
+            <TiLocationOutline size={25} />
+            Rua Ildefonso Stockler de França, 48 - Loja 04. Curitiba/PR
+          </p>
+        </div>
       </div>
     </footer>
   );

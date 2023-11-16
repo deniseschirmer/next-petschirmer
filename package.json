@@ -30,6 +30,8 @@
     "react-icons": "^4.11.0",
     "react-iframe": "^1.8.5",
     "react-responsive": "^9.0.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "typescript": "5.1.6",
     "yup": "^1.2.0"
   },
