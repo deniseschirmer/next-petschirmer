@@ -14,8 +14,10 @@ const Hero = () => {
           src="/foto-principal.png"
           alt="Imagem de fundo"
           className="w-full object-cover object-[10%_50%] min-h-[340px]"
-          width={500}
-          height={500}
+          width={0}
+          height={0}
+          quality={100}
+          sizes="100vw"
         />
 
         <div className="absolute left--12 top-1/3 ml-5">
