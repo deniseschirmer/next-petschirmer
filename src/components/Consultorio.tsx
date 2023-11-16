@@ -19,9 +19,11 @@ const Consultorio = () => {
           Além disso, prezamos pela comunicação clara e transparente, sempre
           explicando os procedimentos e orientando sobre os cuidados necessários
         </p>
-        <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-55 lg:w-56  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 ">
-          Saiba mais
-        </button>
+        <div className=" p-4 flex w-full items-center justify-center">
+          <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-55 lg:w-56  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 ">
+            Saiba mais
+          </button>
+        </div>
       </div>
       <div className=" p-4 flex w-full items-center justify-center">
         <Image
