@@ -1,15 +1,10 @@
+import ServicoBanho from "@/components/BanhoETosa/ServicoBanho";
+import Image from "next/image";
+import { FaCheck } from "react-icons/fa6";
 const Banhoetosa = () => {
   return (
     <>
-      <h1>Serviços</h1>
-      <div>
-        <h2>Banho e tosa </h2>
-        <p>
-          Aqui no Pet Schirmer o bem-estar do seu pet é nossa prioridade,
-          garantimos que ele se sentirá confortável e seguro durante todo o
-          processo.
-        </p>
-      </div>
+      <ServicoBanho />
     </>
   );
 };
