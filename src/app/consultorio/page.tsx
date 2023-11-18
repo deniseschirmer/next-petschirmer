@@ -1,7 +1,8 @@
 import Footer from "@/components/Footer";
-import Title from "./components/Title";
-import ContentBoxText from "./components/ContentBoxText";
-import ContentBoxImage from "./components/ContetnBoxImage";
+
+import ContentBoxImage from "@/components/ContetnBoxImage";
+import Title from "@/components/Title";
+import ContentBoxText from "@/components/ContentBoxText";
 
 const page = () => {
   return (
