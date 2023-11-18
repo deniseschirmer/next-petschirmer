@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
+import CardWork from "./CardWork";
+import { works } from "@/utils/contents/works";
 
 const ServicoBanho = () => {
   return (
@@ -61,6 +63,16 @@ const ServicoBanho = () => {
           className="mt-3"
         />
         <hr className="h-[2px] my-5 bg-black border-1 dark:bg-gray-700" />
+        <h3 className="text-xl font-semibold mb-8">Como Funciona</h3>
+        <div className="flex flex-col gap-5">
+          {works.map((work) => (
+            <CardWork
+              key={work.id}
+              id={work.id}
+              description={work.description}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );

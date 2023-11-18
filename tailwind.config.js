@@ -13,6 +13,7 @@ module.exports = {
         "xlight-brown": "#D2CBC6",
         primary: "rgb(146, 146, 146)",
         bg: "rgb(244, 244, 255)",
+        yellow: "#FFD46A",
       },
     },
   },
