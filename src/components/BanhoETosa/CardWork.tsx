@@ -1,17 +1,13 @@
 import React from "react";
+import { IWork } from "@/interface/works";
 
-interface Work {
-  id: number;
-  description: string;
-}
-
-const CardWork = ({ id, description }: Work) => {
+const CardWork = ({ id, description }: IWork) => {
   return (
-    <div className="flex flex-row gap-3 p-3 border-solid border-black border-2 rounded-lg">
+    <div className="flex flex-row gap-3 p-4 border-solid border-black border-2 rounded-lg items-center">
       <span className="bg-yellow w-6 h-6 px-1 rounded-3xl text-center">
         {id}
       </span>
-      <p className="text-sm font-semibold break-keep">{description}</p>
+      <p className="text-sm font-bold break-keep">{description}</p>
     </div>
   );
 };

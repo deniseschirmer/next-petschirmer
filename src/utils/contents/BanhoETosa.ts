@@ -6,3 +6,10 @@ export const works: Array<IWork> = [
     { id: 3, description: 'Antes do banho informe se há necessidades especias' },
     { id: 4, description: 'Informamos quando o pet estiver pronto' }
 ]
+
+export const care: Array<IWork> = [
+    { id: 1, description: 'Produtos de banho de alta qualidade  ' },
+    { id: 2, description: 'Produtos de banho de alta qualidade  ' },
+    { id: 3, description: 'Equipamentos seguros ' },
+    { id: 4, description: 'Secagem adequada para não causar desconforto' }
+]

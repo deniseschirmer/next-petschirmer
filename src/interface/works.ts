@@ -1,4 +1,4 @@
 export interface IWork {
-    id: number;
+    id?: number;
     description: string;
 }

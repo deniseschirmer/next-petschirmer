@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 import CardWork from "./CardWork";
-import { works } from "@/utils/contents/works";
-
+import { care, works } from "@/utils/contents/BanhoETosa";
+import Care from "./Care";
 const ServicoBanho = () => {
   return (
     <div className="p-4">
@@ -28,31 +28,12 @@ const ServicoBanho = () => {
             Nossa equipe experiente e dedicada, está pronta para oferecer os
             cuidados e atenção que seu pet merece.
           </p>
+
+          {/**Mapeia o objeto care(cuidados) para criar os respectivos componentes*/}
           <ol className="flex flex-col gap-4">
-            <li className="flex flex-row gap-3 justify-start items-center">
-              <FaCheck className="w-6 " />
-              <span className="text-sm font-semibold">
-                Produtos de banho de alta qualidade
-              </span>
-            </li>
-            <li className="flex flex-row gap-3 justify-start items-center">
-              <FaCheck className="w-6" />
-              <span className="text-sm font-semibold">
-                Limpeza das orelhas e corte de unha
-              </span>
-            </li>
-            <li className="flex flex-row gap-3 justify-start items-center">
-              <FaCheck className="w-6" />
-              <span className="text-sm font-semibold">
-                Equipamentos seguros
-              </span>
-            </li>
-            <li className="flex flex-row gap-3 justify-start items-center">
-              <FaCheck className="w-6" />
-              <span className="text-sm font-semibold">
-                Secagem adequada para não causar desconforto
-              </span>
-            </li>
+            {care.map((element) => (
+              <Care key={element.id} description={element.description} />
+            ))}
           </ol>
         </div>
         <Image
@@ -65,6 +46,8 @@ const ServicoBanho = () => {
         <hr className="h-[2px] my-5 bg-black border-1 dark:bg-gray-700" />
         <h3 className="text-xl font-semibold mb-8">Como Funciona</h3>
         <div className="flex flex-col gap-5">
+          
+          {/**método criado para evitar a repetição de componentes */}
           {works.map((work) => (
             <CardWork
               key={work.id}
