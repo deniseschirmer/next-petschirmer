@@ -6,8 +6,10 @@ type Props = {};
 const Care = ({ description }: IWork) => {
   return (
     <li className="flex flex-row gap-3 justify-start items-center">
-      <FaCheck className="w-6 " />
-      <span className="text-sm font-semibold">{description}</span>
+      <FaCheck className="text-base md:text-lg" />
+      <span className="text-sm font-semibold md:text-xl md:font-bold">
+        {description}
+      </span>
     </li>
   );
 };
