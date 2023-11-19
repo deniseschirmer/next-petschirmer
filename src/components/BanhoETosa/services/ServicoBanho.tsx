@@ -1,25 +1,21 @@
 "use client";
 import Image from "next/image";
-import CardWork from "./CardWork";
-import { care, works } from "@/utils/contents/BanhoETosa";
-import Care from "./Care";
-import Paragraph from "./Paragraph";
+import CardWork from "../CardWork";
+import { care, works, transport } from "@/utils/contents/BanhoETosa";
+import Care from "../Care";
+import Paragraph from "../Paragraph";
 import { MagicMotion } from "react-magic-motion";
+import Container from "../Container";
+import HeaderContainer from "../HeaderContainer";
+import AssuranceList from "../AssuranceList";
 const ServicoBanho = () => {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-extrabold mb-3 md:text-3xl">Serviços</h1>
-      <section className="border-solid border-black border-2 p-3 md:p-8 rounded-2xl flex flex-col">
-        <div className="flex flex-row justify-start items-center gap-4 mb-6">
-          <Image
-            src="/banho-e-tosa-ilustracao.svg"
-            alt="Ilustração tosa"
-            className="md:w-[4.688rem]"
-            width={64}
-            height={64}
-          />
-          <h2 className="text-xl font-bold md:text-3xl">Banho e tosa </h2>
-        </div>
+    <Container>
+      <div>
+        <HeaderContainer
+          pathImage="/banho-e-tosa-ilustracao.svg"
+          subTitle="Banho e tosa"
+        />
         <div className="flex flex-col lg:flex-row lg:gap-16">
           <div>
             <div className="flex flex-col gap-4">
@@ -32,12 +28,8 @@ const ServicoBanho = () => {
                 Nossa equipe experiente e dedicada, está pronta para oferecer os
                 cuidados e atenção que seu pet merece.
               </Paragraph>
-              {/**Mapeia o objeto care(cuidados) para criar os respectivos componentes*/}
-              <ol className="flex flex-col gap-4">
-                {care.map((element) => (
-                  <Care key={element.id} description={element.description} />
-                ))}
-              </ol>
+
+              <AssuranceList assuranceList={care} />
             </div>
           </div>
           <Image
@@ -48,12 +40,6 @@ const ServicoBanho = () => {
             className="w-full mt-3 rounded-tr-[5rem] rounded-bl-[5rem] lg:w-1/2"
           />
         </div>
-        {/* <div
-          className="bg-full bg-center w-full bg-no-repeat rounded-bl-3xl rounded-tr-3xl h-[13.938rem] md:w-full md:h-[28.563rem]"
-          style={{
-            backgroundImage: "url(/banho-dog.png)",
-          }}
-        ></div> */}
         <hr className="h-[2px] my-5 bg-black border-1 dark:bg-gray-700" />
         <div>
           <h3 className="text-xl font-semibold mb-8 md:text-2xl">
@@ -68,8 +54,8 @@ const ServicoBanho = () => {
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </Container>
   );
 };
 
