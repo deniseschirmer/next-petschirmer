@@ -1,4 +1,4 @@
-import { IWork } from "@/interface/works"
+import { IWork, IAssurance } from "@/interface/works"
 
 export const works: Array<IWork> = [
     { id: 1, description: "Agende o hórario pelo telefone (41)3042-4820" },
@@ -7,9 +7,14 @@ export const works: Array<IWork> = [
     { id: 4, description: 'Informamos quando o pet estiver pronto' }
 ]
 
-export const care: Array<IWork> = [
+export const care = [
     { id: 1, description: 'Produtos de banho de alta qualidade  ' },
     { id: 2, description: 'Produtos de banho de alta qualidade  ' },
     { id: 3, description: 'Equipamentos seguros ' },
     { id: 4, description: 'Secagem adequada para não causar desconforto' }
+]
+export const transport = [
+    { id: 1, description: 'Flexibilidade de horários ' },
+    { id: 2, description: 'Conforto e segurança para o seu pet' },
+    { id: 3, description: 'Conforto e segurança para o seu pet' },
 ]
