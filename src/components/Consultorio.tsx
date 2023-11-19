@@ -1,8 +1,8 @@
 import Image from "next/image";
 const Consultorio = () => {
   return (
-    <section>
-      <div className=" p-4 xl:p-10">
+    <section className="flex flex-wrap md:flex-wrap lg:flex-nowrap font-nunito md:py-10 md:px-36 lg:px-36 lg:mt-5 gap-6 xl:gap-24">
+      <div className="flex flex-col justify-center items-center lg:items-stretch p-4 xl:p-10">
         <h1 className="text-black font-extrabold text-2xl md:text-3xl mb-6">
           Consultório Veterinário
         </h1>
@@ -19,11 +19,9 @@ const Consultorio = () => {
           Além disso, prezamos pela comunicação clara e transparente, sempre
           explicando os procedimentos e orientando sobre os cuidados necessários
         </p>
-        <div className=" p-4 flex w-full items-center justify-center">
-          <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-55 lg:w-56  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 ">
-            Saiba mais
-          </button>
-        </div>
+        <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-55 lg:w-56  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 ">
+          Saiba mais
+        </button>
       </div>
       <div className=" p-4 flex w-full items-center justify-center">
         <Image
