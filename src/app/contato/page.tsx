@@ -42,17 +42,17 @@ const Page = () => {
                   placeholder="Mensagem"
                 ></textarea>
               </div>
-              <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-[696px] lg:w-[515px] lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 ">
+              <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-[696px] lg:w-full lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 ">
                 Enviar
               </button>
             </form>
           </div>
-          <div className="md:w-1/2 p-4 flex items-center justify-center">
+          <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
             <Image
               src="/form-dog.png"
               alt="Foto Spitz formulário"
               className="object-top"
-              width={350}
+              width={602}
               height={398}
             />
           </div>
