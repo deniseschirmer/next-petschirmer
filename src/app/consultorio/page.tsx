@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-
 import ContentBoxImage from "@/components/ContetnBoxImage";
 import Title from "@/components/Title";
 import ContentBoxText from "@/components/ContentBoxText";
@@ -15,9 +13,7 @@ const page = () => {
           <ContentBoxImage />
         </div>
       </div>
-      <div className="absolute bottom-0 max-xl:relative max-xl:bottom-auto w-full">
-        <Footer />
-      </div>
+      <div className="absolute bottom-0 max-xl:relative max-xl:bottom-auto w-full"></div>
     </>
   );
 };

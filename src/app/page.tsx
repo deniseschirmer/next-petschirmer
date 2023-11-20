@@ -7,7 +7,6 @@ import Services from "@/components/Services";
 import Consultorio from "@/components/Consultorio";
 import Contato from "@/components/Contato";
 import Carrossel from "@/components/Carrossel";
-import Footer from "@/components/Footer";
 
 const Page: React.FC = () => {
   return (
@@ -18,7 +17,6 @@ const Page: React.FC = () => {
       <Consultorio />
       <Contato />
       <Carrossel />
-      <Footer />
     </>
   );
 };
