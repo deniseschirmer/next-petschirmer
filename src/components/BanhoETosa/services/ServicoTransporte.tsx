@@ -12,8 +12,8 @@ const ServicoTransporte = () => {
         pathImage="./transporte-ilustracao.svg"
         subTitle="Leva e traz"
       />
-      <div className="flex flex-col gap-4">
-        <Paragraph>
+      <div className="flex flex-col gap-4 xl:flex-row xl:gap-[4.25rem]">
+        <Paragraph resize={true}>
           Para o seu conforto temos o serviço de leva e traz, atendemos em um
           raio de até 5km. Confirme com a nossa equipe se o serviço atende a sua
           região.

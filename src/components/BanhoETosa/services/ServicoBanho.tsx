@@ -16,9 +16,9 @@ const ServicoBanho = () => {
           pathImage="/banho-e-tosa-ilustracao.svg"
           subTitle="Banho e tosa"
         />
-        <div className="flex flex-col lg:flex-row lg:gap-16">
+        <div className="flex flex-col lg:flex-row lg:gap-7 xl:gap-16 items-start">
           <div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 md:gap-6">
               <Paragraph>
                 Aqui no Pet Schirmer o bem-estar do seu pet é nossa prioridade,
                 garantimos que ele se sentirá confortável e seguro durante todo
@@ -37,7 +37,7 @@ const ServicoBanho = () => {
             width={656}
             height={457}
             alt="cachorro tomando banho"
-            className="w-full mt-3 rounded-tr-[5rem] rounded-bl-[5rem] lg:w-1/2"
+            className="w-full mt-3 lg:mt-0 rounded-tr-[5rem] rounded-bl-[5rem] lg:w-[50%] xl:w-1/2"
           />
         </div>
         <hr className="h-[2px] my-5 bg-black border-1 dark:bg-gray-700" />
