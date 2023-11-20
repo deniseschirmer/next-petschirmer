@@ -18,3 +18,9 @@ export const transport = [
     { id: 2, description: 'Conforto e segurança para o seu pet' },
     { id: 3, description: 'Conforto e segurança para o seu pet' },
 ]
+export const accommodation = [
+    { id: 1, description: 'Ambiente acolhedor e seguro' },
+    { id: 2, description: 'Monitoramento para garantir o bem-estar' },
+    { id: 3, description: 'Atividades recreativas' },
+    { id: 4, description: 'Interação supervisionada com outros pets' }
+]

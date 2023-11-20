@@ -1,4 +1,5 @@
 import ServicoBanho from "@/components/BanhoETosa/services/ServicoBanho";
+import ServicoHospedagem from "@/components/BanhoETosa/services/ServicoHospedagem";
 import ServicoTransporte from "@/components/BanhoETosa/services/ServicoTransporte";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -10,8 +11,9 @@ const Banhoetosa = () => {
         <h1 className="text-2xl font-extrabold mb-3 md:text-3xl">Serviços</h1>
         <ServicoBanho />
         <ServicoTransporte />
+        <ServicoHospedagem />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
