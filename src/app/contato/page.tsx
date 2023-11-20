@@ -58,13 +58,13 @@ const Contato = () => {
 
   return (
     <>
-      <section className="flex flex-col p-4 md:p-12 mx-auto font-nunito md:py-10 md:px-36 lg:px-36 lg:mt-5 gap-6 xl:gap-24">
+      <section className="flex flex-col p-4 md:p-12 mx-auto md:flex-wrap lg:flex-nowrap font-nunito md:py-10 md:px-6 lg:px-36 lg:mt-5 gap-6 xl:gap-24">
         <div className="flex flex-col md:flex-row gap-3">
           <div className="md:w-1/2">
-            <h1 className="text-2xl md:text-3xl font-extrabold pt-6 px-4 md:p-16">
+            <h1 className="text-2xl md:text-3xl font-extrabold pt-6 pr-4 md:pr-16">
               Entre em Contato
             </h1>
-            <p className="mb-4 text-sm md:text-base lg:text-lg font-normal leading-5">
+            <p className="mb-4 mt-4 text-sm md:text-base lg:text-lg font-normal leading-5">
               Ficamos felizes em receber sua mensagem. Entre em contato para
               tirar suas dúvidas, agendar serviços e consultas. Estamos prontos
               para ajudar.
@@ -106,9 +106,11 @@ const Contato = () => {
                   <p className="text-red-500">{errors.mensagem}</p>
                 )}
               </div>
-              <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-[696px] lg:w-full lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6">
-                Enviar
-              </button>
+              <div className="flex flex-col items-center justify-center">
+                <button className="flex bg-dark-green rounded-md text-white w-full h-9 lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6">
+                  Enviar
+                </button>
+              </div>
             </form>
           </div>
           <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
