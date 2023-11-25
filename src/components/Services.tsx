@@ -8,7 +8,7 @@ const Services = () => {
       <h1 className=" bg-light-brown text-left text-2xl md:text-3xl font-extrabold  pt-6 px-4 md:p-16 ">
         Serviços
       </h1>
-      <div className="flex flex-wrap md:flex-wrap  w-full h-full  bg-light-brown px-4 md:px-4 lg:px-6 xl:px-12 pt-2 pb-6 md:pb-14 lg:pb-16 gap-4 justify-center ">
+      <div className="flex flex-wrap md:flex-wrap  w-full h-full  bg-light-brown px-4 md:px-4 lg:px-6 xl:px-12 pt-2 pb-6 md:pb-14 lg:pb-16 gap-4 justify-center items-center ">
         <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[385px]  rounded-2xl p-4">
           <div className="flex items-center">
             <Image
@@ -136,7 +136,7 @@ const Services = () => {
             Ambiente tranquilo e seguro durante o transporte.
           </p>
         </div>
-        <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[385px]  rounded-2xl p-4 ml-3">
+        <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[385px]  rounded-2xl p-4 ">
           <div className="flex items-center">
             <Image
               src="/hospedagem-icon.png"
