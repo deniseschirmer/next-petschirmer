@@ -58,12 +58,12 @@ const Contato = () => {
 
   return (
     <>
-      <section className="flex flex-col p-4 md:p-12 mx-auto md:flex-wrap lg:flex-nowrap font-nunito md:py-10 md:px-6 lg:px-36 lg:mt-5 gap-6 xl:gap-24">
-        <div className="flex flex-col md:flex-row gap-3">
+      <section className="flex flex-col p-4 md:p-12 mx-auto md:flex-wrap lg:flex-nowrap font-nunito md:py-10 md:px-6 lg:px-12 lg:mt-5 gap-6 xl:gap-12">
+        <h1 className="text-2xl md:text-3xl font-extrabold pt-6 pr-4 md:pr-16">
+          Entre em Contato
+        </h1>
+        <div className="flex flex-col md:flex-row gap-3 xl:gap-16">
           <div className="md:w-1/2">
-            <h1 className="text-2xl md:text-3xl font-extrabold pt-6 pr-4 md:pr-16">
-              Entre em Contato
-            </h1>
             <p className="mb-4 mt-4 text-sm md:text-base lg:text-lg font-normal leading-5">
               Ficamos felizes em receber sua mensagem. Entre em contato para
               tirar suas dúvidas, agendar serviços e consultas. Estamos prontos
@@ -113,15 +113,15 @@ const Contato = () => {
               </div>
             </form>
           </div>
-          <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
-            <Image
-              src="/form-dog.png"
-              alt="Foto Spitz formulário"
-              className="object-top"
-              width={602}
-              height={398}
-            />
-          </div>
+          {/* <div className="w-full md:w-1/2 p-4 flex items-center justify-center"> */}
+          <Image
+            src="/dog-for-contact.jpg"
+            alt="Foto Spitz formulário"
+            className="rounded-tl-[5rem] rounded-br-[5rem] lg:w-[50%] xl:w-1/2"
+            width={602}
+            height={396}
+          />
+          {/* </div> */}
         </div>
       </section>
     </>
