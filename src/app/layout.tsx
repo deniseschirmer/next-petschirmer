@@ -23,9 +23,9 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={nunito.className}>
         {/**Padrão para todas as páginas (Header e footer são os mesmos para todas) */}
-        <Navbar />
-        {children}
-        <Footer />
+          <Navbar />
+          {children}
+          <Footer />
       </body>
     </html>
   );
