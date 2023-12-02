@@ -10,7 +10,7 @@ const Services = () => {
       <h1 className="text-left text-2xl md:text-3xl font-extrabold mb-4 mt-5">
         Serviços
       </h1>
-      <div className="flex flex-wrap md:flex-wrap  w-full h-full px-4 md:px-4 lg:px-6 xl:px-12 pt-2 pb-6 md:pb-14 lg:pb-16 gap-4 justify-center items-center ">
+      <div className="flex flex-wrap md:flex-wrap  w-full h-full px-4 md:px-4 lg:px-6 xl:px-12 md:flex-col lg:flex-row pt-2 pb-6 md:pb-14 lg:pb-16 gap-4 justify-center items-center ">
         {objService.map((service) => (
           <CardServices
             key={service.id}

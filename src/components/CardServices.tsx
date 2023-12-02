@@ -6,7 +6,7 @@ import AssuranceList from "./BanhoETosa/AssuranceList";
 import Care from "@/components/BanhoETosa/Care";
 const CardServices = (props: IService) => {
   return (
-    <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[30%]  rounded-2xl p-4 flex flex-col gap-7 lg:min-h-[27.688rem]">
+    <div className=" bg-white w-[340px]  md:w-[528px]  lg:w-[30%]  rounded-2xl p-4 flex flex-col gap-7 lg:min-h-[34.688rem]">
       {/**Cabeçalho do componente de serviço */}
       <div className="flex items-center">
         <Image
