@@ -62,7 +62,7 @@ const Contato = () => {
         <h1 className="text-2xl md:text-3xl font-extrabold pt-6 pr-4 md:pr-16">
           Entre em Contato
         </h1>
-        <div className="flex flex-col md:flex-row gap-3 xl:gap-16">
+        <div className="flex flex-col-reverse md:flex-row gap-3 xl:gap-16">
           <div className="md:w-1/2">
             <p className="mb-4 mt-4 text-sm md:text-base lg:text-lg font-normal leading-5">
               Ficamos felizes em receber sua mensagem. Entre em contato para
@@ -121,7 +121,6 @@ const Contato = () => {
             width={602}
             height={396}
           />
-          {/* </div> */}
         </div>
       </section>
     </>
