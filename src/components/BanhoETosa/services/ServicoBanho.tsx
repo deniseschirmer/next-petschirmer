@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import CardWork from "../CardWork";
-import { care, works, transport } from "@/utils/contents/BanhoETosa";
-import Care from "../Care";
+import { care, works } from "@/utils/contents/BanhoETosa";
 import Paragraph from "../Paragraph";
 import { MagicMotion } from "react-magic-motion";
 import Container from "../Container";
