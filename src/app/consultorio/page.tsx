@@ -8,7 +8,7 @@ const page = () => {
       <div className="flex flex-col p-4 md:p-12 mx-auto">
         <Title />
 
-        <div className="flex flex-col-reverse gap-8 xl:flex-row xl:px-5 mt-8 justify-center items-center">
+        <div className="flex w-full flex-col-reverse gap-8 xl:flex-row xl:px-5 mt-8 justify-center items-center">
           <ContentBoxText />
           <ContentBoxImage />
         </div>
