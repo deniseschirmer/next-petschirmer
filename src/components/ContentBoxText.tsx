@@ -1,7 +1,7 @@
 const ContentBoxText = () => {
   return (
     <>
-      <div className="flex flex-col gap-5 xl:w-[50%] justify-center md:text-md">
+      <div className="flex flex-col gap-5 xl:w-[50%] justify-between md:text-md pt-4">
         <p className="text-sm md:text-base lg:text-lg">
           Nosso consultório é um ambiente seguro e acolhedor, projetado para
           proporcionar o melhor atendimento ao seu pet. Utilizamos equipamentos

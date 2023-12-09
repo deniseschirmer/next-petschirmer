@@ -1,7 +1,7 @@
 "use client";
 import { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
-
+import axios from "axios";
 interface FormData {
   nome: string;
   telefone: string;
@@ -27,7 +27,7 @@ const Contato = () => {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Validação - todos os campos são obrigatórios
@@ -44,15 +44,42 @@ const Contato = () => {
       newErrors.mensagem = "Campo obrigatório";
     }
 
-    // Adicione mais lógica de validação conforme necessário
+    // Atualiza o estado com os erros encontrados
+    setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
       // Formulário válido, pode enviar os dados
       console.log("Dados do formulário:", formData);
-      // Adicione aqui a lógica para enviar os dados para o backend ou fazer o que for necessário
-    } else {
-      // Atualiza o estado com os erros encontrados
-      setErrors(newErrors);
+
+      // Configuração do Axios
+      const url = "https://api.emailjs.com/api/v1.0/email/send";
+      const data = {
+        service_id: "service_i88yk2u",
+        template_id: "template_j4usb0r",
+        user_id: "dnO6L1lAESXXK9Now",
+        template_params: {
+          from_name: formData.nome,
+          from_email: "victorgabriel1730@gmail.com",
+          message: formData.mensagem,
+        },
+      };
+      // Enviar email usando Axios
+      try {
+        const response = await axios.post(url, data);
+        console.log("Email enviado com sucesso!", response);
+
+        // Limpa o formulário após o envio
+        setFormData({
+          nome: "",
+          telefone: "",
+          mensagem: "",
+        });
+
+        // Limpa os erros
+        setErrors({});
+      } catch (error) {
+        console.error("Erro ao enviar email:", error);
+      }
     }
   };
 
