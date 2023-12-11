@@ -7,11 +7,10 @@ const ContentBoxImage = () => {
         <Image
           src="/vet-dogg.jpg"
           alt="Veterinário mais cachorro"
-          className="w-full mt-3 lg:mt-0 rounded-tr-[4rem] rounded-bl-[4rem] lg:w-[50%] xl:w-1/2"
-          width={200}
-          height={200}
+          className="w-full lg:mt-0 rounded-tr-[4rem] rounded-bl-[4rem] lg:w-[50%] xl:w-1/2"
+          width={150}
+          height={150}
           quality={100}
-          sizes="50vw"
         />
       </div>
     </>
