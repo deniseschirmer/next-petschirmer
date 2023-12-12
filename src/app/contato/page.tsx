@@ -58,12 +58,12 @@ const Contato = () => {
         // Configuração do Axios
         const url = "https://api.emailjs.com/api/v1.0/email/send";
         const data = {
-          service_id: "service_i88yk2u",
-          template_id: "template_j4usb0r",
-          user_id: "dnO6L1lAESXXK9Now",
+          service_id: "service_2k5q938",
+          template_id: "template_jhsyefh",
+          user_id: "Cj0c8SWj6Eva_le4O",
           template_params: {
             from_name: formData.nome,
-            from_email: "victorgabriel1730@gmail.com",
+            from_email: "deniseschiirmer@gmail.com",
             message: formData.mensagem,
           },
         };
