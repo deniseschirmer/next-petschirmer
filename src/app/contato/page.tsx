@@ -29,10 +29,9 @@ const Contato = () => {
     });
   };
 
-  //Declaração do método que irá invocar o componente de alerta
+  // Declaração do método que irá invocar o componente de alerta
   const MySwal = withReactContent(Swal);
 
-  //const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -50,8 +49,6 @@ const Contato = () => {
       newErrors.mensagem = "Campo obrigatório";
     }
 
-    // Atualiza o estado com os erros encontrados
-    setErrors(newErrors);
     // Atualiza o estado com os erros encontrados
     setErrors(newErrors);
 
@@ -77,7 +74,7 @@ const Contato = () => {
       try {
         const response = await axios.post(url, data);
 
-        //invocação do alerta personalizado
+        // invocação do alerta personalizado
         MySwal.fire({
           title: "Enviado!",
           text: `Email enviado com sucesso!`,
