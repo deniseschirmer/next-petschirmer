@@ -35,19 +35,19 @@ const Contato = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validação - todos os campos são obrigatórios
-    const newErrors: Partial<FormData> = {};
-    if (!formData.nome.trim()) {
-      newErrors.nome = "Campo obrigatório";
-    }
-    if (!formData.telefone.trim()) {
-      newErrors.telefone = "Campo obrigatório";
-    } else if (!/^\d+$/.test(formData.telefone)) {
-      newErrors.telefone = "Digite apenas números";
-    }
-    if (!formData.mensagem.trim()) {
-      newErrors.mensagem = "Campo obrigatório";
-    }
+      // Validação - todos os campos são obrigatórios
+      const newErrors: Partial<FormData> = {};
+      if (!formData.nome.trim()) {
+        newErrors.nome = "Campo obrigatório";
+      }
+      if (!formData.telefone.trim()) {
+        newErrors.telefone = "Campo obrigatório";
+      } else if (!/^\d+$/.test(formData.telefone)) {
+        newErrors.telefone = "Digite apenas números";
+      }
+      if (!formData.mensagem.trim()) {
+        newErrors.mensagem = "Campo obrigatório";
+      }
 
     // Atualiza o estado com os erros encontrados
     setErrors(newErrors);
