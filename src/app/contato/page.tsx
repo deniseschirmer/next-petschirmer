@@ -2,6 +2,8 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
 import axios from "axios";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 interface FormData {
   nome: string;
   telefone: string;
@@ -26,6 +28,9 @@ const Contato = () => {
       [name]: value,
     });
   };
+
+  //Declaração do método que irá invocar o componente de alerta
+  const MySwal = withReactContent(Swal);
 
   //const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -69,7 +74,15 @@ const Contato = () => {
       // Enviar email usando Axios
       try {
         const response = await axios.post(url, data);
-        console.log("Email enviado com sucesso!", response);
+
+        //invocação do alerta personalizado
+        MySwal.fire({
+          title: "Enviado!",
+          text: `Email enviado com sucesso!`,
+          icon: "success",
+          confirmButtonText: "OK",
+          confirmButtonColor: "#26682b",
+        });
 
         // Limpa o formulário após o envio
         setFormData({
@@ -81,7 +94,13 @@ const Contato = () => {
         // Limpa os erros
         setErrors({});
       } catch (error) {
-        console.error("Erro ao enviar email:", error);
+        MySwal.fire({
+          title: "Erro!",
+          text: `${error} Ocorreu um erro ao enviar o seu email! tente novamente.`,
+          icon: "error",
+          confirmButtonText: "OK",
+          confirmButtonColor: "red",
+        });
       }
     }
   };
@@ -92,7 +111,7 @@ const Contato = () => {
         Entre em Contato
       </h1>
       <div className="flex flex-col-reverse md:flex-col gap-3 xl:gap-16 lg:flex-row">
-        <div className="md:w-[100%] lg:w-1/2">
+        <div className="md:w-[100%] lg:w-[40%] xl:w-1/2">
           <p className="mb-4 mt-4 text-sm md:text-base lg:text-lg font-normal leading-5">
             Ficamos felizes em receber sua mensagem. Entre em contato para tirar
             suas dúvidas, agendar serviços e consultas. Estamos prontos para
@@ -136,17 +155,17 @@ const Contato = () => {
               )}
             </div>
             <div className="flex flex-col items-center justify-center">
-              <button className="flex bg-dark-green rounded-md text-white w-full h-9 lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6">
+              <button className="flex bg-dark-green rounded-md text-white w-full h-9 lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2 my-6 lg:my-0 xl:my-6">
                 Enviar
               </button>
             </div>
           </form>
         </div>
-        <div className="w-full md:w-[100%] lg:w-1/2 p-4 flex items-center justify-center">
+        <div className="w-full md:w-[100%] lg:w-[60%] xl:w-1/2 p-4 flex items-center justify-center">
           <Image
             src="/dog-for-contact.jpg"
             alt="Foto Spitz formulário"
-            className="rounded-tl-[5rem] rounded-br-[5rem] md:w-[100%] lg:w-[100%] xl:w-1/2"
+            className="rounded-tl-[5rem] rounded-br-[5rem] md:w-[100%] lg:w-[100%]"
             width={602}
             height={396}
           />

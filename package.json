@@ -37,6 +37,8 @@
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.8",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.10.1",
+    "sweetalert2-react-content": "^5.0.7",
     "typescript": "5.1.6",
     "yup": "^1.2.0"
   },
