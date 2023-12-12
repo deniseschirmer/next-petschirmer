@@ -27,7 +27,7 @@ const Contato = () => {
     });
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  //const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -91,8 +91,8 @@ const Contato = () => {
       <h1 className="text-2xl md:text-3xl font-extrabold pt-6 pr-4 md:pr-16">
         Entre em Contato
       </h1>
-      <div className="flex flex-col-reverse md:flex-row gap-3 xl:gap-16">
-        <div className="md:w-1/2">
+      <div className="flex flex-col-reverse md:flex-col gap-3 xl:gap-16 lg:flex-row">
+        <div className="md:w-[100%] lg:w-1/2">
           <p className="mb-4 mt-4 text-sm md:text-base lg:text-lg font-normal leading-5">
             Ficamos felizes em receber sua mensagem. Entre em contato para tirar
             suas dúvidas, agendar serviços e consultas. Estamos prontos para
@@ -142,11 +142,11 @@ const Contato = () => {
             </div>
           </form>
         </div>
-        <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
+        <div className="w-full md:w-[100%] lg:w-1/2 p-4 flex items-center justify-center">
           <Image
             src="/dog-for-contact.jpg"
             alt="Foto Spitz formulário"
-            className="rounded-tl-[5rem] rounded-br-[5rem] lg:w-[50%] xl:w-1/2"
+            className="rounded-tl-[5rem] rounded-br-[5rem] md:w-[100%] lg:w-[100%] xl:w-1/2"
             width={602}
             height={396}
           />
@@ -154,6 +154,6 @@ const Contato = () => {
       </div>
     </section>
   );
+  //};
 };
-
 export default Contato;
