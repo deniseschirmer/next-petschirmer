@@ -19,7 +19,7 @@ const Hero = () => {
           quality={100}
           sizes="100vw"
         />
-        <div className="absolute left--12 top-1/3 ml-5 animate-fade-up animate-ease-in-out">
+        <div className="absolute left--12 top-1/3 ml-5">
           <h1 className="text-black text-2xl md:text-4xl xl:text-6xl font-extrabold leading-7 lg:leading-14 text-left mb-2">
             Quer ficar <br />
             Lindão?
@@ -31,7 +31,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-wrap sm:flex-nowrap bg-light-brown items-center justify-between px-4 md:px-4 lg:px-6 xl:px-32 pt-7 pb-12 animate-fade-up animate-ease-in">
+      <div className="flex flex-wrap sm:flex-nowrap bg-light-brown items-center justify-between px-4 md:px-4 lg:px-6 xl:px-32 pt-7 pb-12">
         <div className="flex justify-between ">
           <Image
             src="/foto.png"

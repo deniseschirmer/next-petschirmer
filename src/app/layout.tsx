@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import Footer from "@/components/Footer";
+
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["300", "500", "400", "600", "700", "800"],

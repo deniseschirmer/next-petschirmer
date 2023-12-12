@@ -21,6 +21,10 @@
     "arc-carousel": "^1.1.0",
     "autoprefixer": "^10.4.15",
     "axios": "^1.6.2",
+<<<<<<< HEAD
+=======
+    "dotenv": "^16.3.1",
+>>>>>>> 549c7def090215e9955bf4947c0ca6cdcd481c7d
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.18",
     "framer-motion": "^10.16.5",
@@ -37,6 +41,8 @@
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.8",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.10.1",
+    "sweetalert2-react-content": "^5.0.7",
     "typescript": "5.1.6",
     "yup": "^1.2.0"
   },
