@@ -4,6 +4,7 @@ import Image from "next/image";
 import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+
 interface FormData {
   nome: string;
   telefone: string;
@@ -16,7 +17,6 @@ const Contato = () => {
     telefone: "",
     mensagem: "",
   });
-
   const [errors, setErrors] = useState<Partial<FormData>>({});
 
   const handleChange = (
@@ -62,15 +62,17 @@ const Contato = () => {
       // Configuração do Axios
       const url = "https://api.emailjs.com/api/v1.0/email/send";
       const data = {
-        service_id: "service_i88yk2u",
-        template_id: "template_j4usb0r",
-        user_id: "dnO6L1lAESXXK9Now",
+        service_id: process.env.SERVICE_ID,
+        template_id: process.env.TEMPLATE_ID,
+        user_id: process.env.USER_ID,
         template_params: {
           from_name: formData.nome,
-          from_email: "victorgabriel1730@gmail.com",
+          from_email: process.env.EMAIL,
           message: formData.mensagem,
         },
       };
+      console.log(data);
+
       // Enviar email usando Axios
       try {
         const response = await axios.post(url, data);
@@ -83,6 +85,7 @@ const Contato = () => {
           confirmButtonText: "OK",
           confirmButtonColor: "#26682b",
         });
+        console.log("sucesso", response);
 
         // Limpa o formulário após o envio
         setFormData({
