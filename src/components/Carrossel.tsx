@@ -99,10 +99,9 @@ const Carrossel: FC = () => {
               <Image
                 src={image}
                 alt={`Foto ${index + 1}`}
-                layout="responsive"
                 width={215}
                 height={215}
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
                 className="rounded"
               />
             </div>

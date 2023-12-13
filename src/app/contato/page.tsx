@@ -29,29 +29,26 @@ const Contato = () => {
     });
   };
 
-  //Declaração do método que irá invocar o componente de alerta
+  // Declaração do método que irá invocar o componente de alerta
   const MySwal = withReactContent(Swal);
 
-  //const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validação - todos os campos são obrigatórios
-    const newErrors: Partial<FormData> = {};
-    if (!formData.nome.trim()) {
-      newErrors.nome = "Campo obrigatório";
-    }
-    if (!formData.telefone.trim()) {
-      newErrors.telefone = "Campo obrigatório";
-    } else if (!/^\d+$/.test(formData.telefone)) {
-      newErrors.telefone = "Digite apenas números";
-    }
-    if (!formData.mensagem.trim()) {
-      newErrors.mensagem = "Campo obrigatório";
-    }
+      // Validação - todos os campos são obrigatórios
+      const newErrors: Partial<FormData> = {};
+      if (!formData.nome.trim()) {
+        newErrors.nome = "Campo obrigatório";
+      }
+      if (!formData.telefone.trim()) {
+        newErrors.telefone = "Campo obrigatório";
+      } else if (!/^\d+$/.test(formData.telefone)) {
+        newErrors.telefone = "Digite apenas números";
+      }
+      if (!formData.mensagem.trim()) {
+        newErrors.mensagem = "Campo obrigatório";
+      }
 
-    // Atualiza o estado com os erros encontrados
-    setErrors(newErrors);
     // Atualiza o estado com os erros encontrados
     setErrors(newErrors);
 
@@ -77,7 +74,7 @@ const Contato = () => {
       try {
         const response = await axios.post(url, data);
 
-        //invocação do alerta personalizado
+        // invocação do alerta personalizado
         MySwal.fire({
           title: "Enviado!",
           text: `Email enviado com sucesso!`,
