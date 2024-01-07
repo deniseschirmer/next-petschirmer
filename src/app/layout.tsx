@@ -11,7 +11,8 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: "Pet Schirmer",
-  description: "Pet Schirmer Project",
+  description:
+    "Pet Schirmer, somos especialistas em banho e tosa, cuidamos do seu animalzinho como se fosse nosso🐶",
 };
 
 export default function RootLayout({
