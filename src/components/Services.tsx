@@ -4,6 +4,7 @@ import { BiSolidRightArrow } from "react-icons/bi";
 import CardServices from "./CardServices";
 import { objService } from "@/utils/contents/servicesCards";
 import { ServerInsertedHTMLContext } from "next/navigation";
+import Link from "next/link";
 const Services = () => {
   return (
     <section className="bg-light-brown relative w-full py-6 px-6">
@@ -27,10 +28,13 @@ const Services = () => {
             Segurança e o bem-estar do seu pet é a nossa prioridade. Garantindo
             que ele receba o melhor atendimento.
           </p>
-          <button className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-55 lg:w-56  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2">
+          <Link
+            className="flex bg-dark-green rounded-md text-white w-80 h-9 md:w-55 lg:w-56  lg:h-11 text-sm md:text-base items-center justify-center p-1 gap-2"
+            href="/banhoetosa"
+          >
             Veja todos os detalhes
             <BiSolidRightArrow />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
