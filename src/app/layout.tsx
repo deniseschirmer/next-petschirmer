@@ -22,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <head>
+        <link rel="icon" href="/favicon-pet.ico" />
+      </head>
       {/**Padrão para todas as páginas (Header e footer são os mesmos para todas) */}
       <body className={nunito.className}>
         <Navbar />
