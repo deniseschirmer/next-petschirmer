@@ -39,7 +39,7 @@ const images = [
   "/fada.jpg",
 ];
 
-const Carrossel: FC = () => {
+const Carrossel = () => {
   const settings: Settings = {
     dots: true,
     infinite: true,

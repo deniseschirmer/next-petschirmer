@@ -68,7 +68,6 @@ const Contato = () => {
           message: formData.mensagem,
         },
       };
-      console.log(data);
 
       // Enviar email usando Axios
       try {

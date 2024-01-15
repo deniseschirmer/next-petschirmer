@@ -1,8 +1,7 @@
 import ServicoBanho from "@/components/BanhoETosa/services/ServicoBanho";
 import ServicoHospedagem from "@/components/BanhoETosa/services/ServicoHospedagem";
 import ServicoTransporte from "@/components/BanhoETosa/services/ServicoTransporte";
-import Image from "next/image";
-import { FaCheck } from "react-icons/fa6";
+
 const Banhoetosa = () => {
   return (
     <>
